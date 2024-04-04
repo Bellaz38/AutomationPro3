@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="tests">
+    <test name="runTests_Edge">
+        <parameter name="browser" value="edge"/>
+        <parameter name="testUrl" value="https://shop.demoqa.com/shop/"/>
+        <classes>
+            <class name="runTests"/>
+        </classes>
+    </test>
+
+    <test name="runTests_chrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="testUrl" value="https://shop.demoqa.com/shop/"/>
+        <classes>
+            <class name="runTests"/>
+        </classes>
+
+    </test>
+
+
+</suite>
+
